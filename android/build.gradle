@@ -24,6 +24,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {    
+    namespace 'com.appleeducate.appreview'
     compileSdkVersion 33
     group 'com.appleeducate.appreview'
 
