@@ -1,14 +1,16 @@
-group 'com.appleeducate.appreview'
 version '1.0-SNAPSHOT'
 
 buildscript {
+    ext.kotlin_version = '1.7.10'
+
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -22,11 +24,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {    
-    compileSdkVersion 28
-    namespace 'com.appleeducate.appreview'
+    compileSdkVersion 33
+    group 'com.appleeducate.appreview'
 
     defaultConfig {
-        minSdkVersion 16
+        targetSdkVersion 33
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
