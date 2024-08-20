@@ -25,11 +25,11 @@ apply plugin: 'com.android.library'
 
 android {    
     namespace 'com.appleeducate.appreview'
-    compileSdkVersion 33
+    compileSdkVersion 34
     group 'com.appleeducate.appreview'
 
     defaultConfig {
-        targetSdkVersion 33
+        targetSdkVersion 34
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -39,5 +39,5 @@ android {
 
 dependencies {
     api 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.android.play:core:1.8.2'
+    implementation 'com.google.android.play:core:1.10.3'
 }
